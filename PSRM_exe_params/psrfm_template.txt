@@ -1,0 +1,61 @@
+PSRFM_PARAMETER_START
+# number of input pairs of fine and coarse resolution image
+  NUM_IN_PAIRS = 2
+# input coarse resolution data (saved in 2 bytes (int16) / pixel)
+  IN_PAIR_COARSE_FNAME = _
+# input fine resolution data
+  IN_PAIR_FINE_FNAME = _
+# input cluster data (saved in 1 bytes (int8) / pixel)
+  IN_PAIR_CLUSTER_FNAME = NONE
+# input cloud mask data for fine resolution data
+  IN_PAIR_FINE_MASK_FNAME = _
+# coarse resolution data list for prediction days
+  IN_PDAY_COARSE_NO = _
+# the directory for output fine resolution prediction
+  OUT_PREDICTION_DIR = _
+  OUT_TEMP_DIR = _
+  OUT_ENVI_HDR = _
+# prediction model (PSRFM, KFRFM)
+  PREDICT_MODEL = PSRFM
+# option for co-registration (YES|NO)
+  CO_REGISTER = NO
+# number of rows of input fine and coarse images, for coregistration COARSE_ROWS > NROWS, otherwise they are equal
+  NROWS = _
+  COARSE_ROWS = _
+# number of columns of input fine and coarse images, for coregistration COARSE_COLS > NCOLS, otherwise they are equal
+  NCOLS = _
+  COARSE_COLS = _
+# number of bands (same for all inputs)
+  NBANDS = _
+# spatial resolution (same for all inputs)
+  RESOLUTION = _
+# resolution ratio of coarse and fine images
+  BLOCK_SIZE = _
+# define data scale factor
+  SCALE_FACTOR = 10000
+# define data scale factor
+  SCALE_FACTOR = 10000
+# define metadata for fine resolution input
+  FINE_IMAGE_FILLV = -9999
+  FINE_IMAGE_DATA_RANGE = 0, 10000
+  FINE_IMAGE_UNCERTAINTY = 40
+# define metadata for coarse resolution input
+  COARSE_IMAGE_FILLV = 32767
+  COARSE_IMAGE_DATA_RANGE = 0, 10000
+  COARSE_IMAGE_UNCERTAINTY = 20
+# cluster method (KMEAN|CRATIO) and input data
+  CLUSTER_METHOD = KMEAN
+  CLUSTER_DATA = fine
+# cluster range
+  CLUSTER_RANGE = 1 10
+# cluster optimization method (CC|CF)
+  CLUSTER_OPTIMAL = CF
+# residual correction method
+  RC_METHOD = none
+# forward and backward merge method (temporal|uncertainty)
+  MERGE_METHOD = temporal
+# option for merging fine image on prediction date if available (YES|NO)
+  MERGE_FINE = NO
+  MERGE_THRESHOLD = 500
+  MERGE_EXTENSION = 3
+PSRFM_PARAMETER_END

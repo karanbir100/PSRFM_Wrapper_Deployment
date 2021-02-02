@@ -1,0 +1,18 @@
+{
+    "west_long" : -118.45721879827498,
+    "east_long" : -118.29671541082381,
+    "north_lat" : 48.81204219953305,
+    "south_lat" : 48.70980208174063,
+
+    "date_range" : ["2019-07-01", "2019-12-12"],
+    "prediction_dates" : ["2019-08-30", "2019-11-23", "2014-09-01"],
+    "skip_if_reference_not_found" : true,
+
+    "satellite_choice" : "s2",
+    "overlap_fraction" : 1,
+    "percent_cloudy" : 5,
+    "drive_folder" : "test7KelownaS2Aug30Nov23",
+    "local_drive_folder_location" : "C:\\Users\\karan\\Google Drive",
+
+    "local_dst_base_path" : "C:\\Users\\karan\\Documents\\CCRS_2A_COOP\\PSRFM_Testing\\SentinelKelownaTest7"
+}
