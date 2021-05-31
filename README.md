@@ -1,7 +1,7 @@
 # Introduction
-PSRFM is a program developed to interpolate high resolution images based on a high resolution (landsat/sentinel) image before and after the date, along with 3 low resolution MODIS images on the same days as the original high resolution image, and one on the day desired for prediction. It is originally a C++ Program.
+PSRFM is a program developed to interpolate high resolution images based on a high resolution (landsat/sentinel) image before and after the date, along with 3 low resolution MODIS images on the same days as the original high resolution image, and one on the day desired for prediction. It is originally a C++ Program and can be found, along with it's original whitepapers in the repository here: https://github.com/dzhong-hub/PSRFM 
 
-This application simplifies the process of running PSRFM into a single-input procedure, and also reduces the peak computing power necessary to run PSRFM by splitting the images into smaller tiles and processing them individually.
+This application simplifies the process of running PSRFM into a single-input file procedure, with no need to find any satellite imagery manually. Additionally, it reduces the peak computing power necessary to run PSRFM by splitting the images into smaller tiles and processing them individually.
 
 # Setup
 - A python 3 environment is required with the packages included in the packages.txt file in this repository (conda recommended)
